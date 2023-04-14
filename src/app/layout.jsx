@@ -1,19 +1,19 @@
-import '../globals.css'
+import './globals.css'
 
 export const metadata = {
   title: 'Plantify',
   description: 'A simple app to help you keep track of your plants',
 }
 
-export default function HomeLayout({ children }) {
+export default function RootLayout({ children }) {
   return (
-    <html lang="en">
+    <html id='root' lang="en">
       <body>
-      <section id='home'>
-        <h1>
-          This Is The Home Layout
-        </h1>
-      </section>
+        <section id='root'>
+          <h1>
+            This Is The Root Layout
+          </h1>
+        </section>
         <section>
           {children}
         </section>
