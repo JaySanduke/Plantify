@@ -1,4 +1,7 @@
-import './globals.css'
+import './globals.css';
+
+//components
+import Header from './components/headers/Header';
 
 export const metadata = {
   title: 'Plantify',
@@ -9,14 +12,9 @@ export default function RootLayout({ children }) {
   return (
     <html id='root' lang="en">
       <body>
-        <section id='root'>
-          <h1>
-            This Is The Root Layout
-          </h1>
-        </section>
-        <section>
-          {children}
-        </section>
+        <Header />
+        <h1>This root layout</h1>
+        {children}
       </body>
     </html>
   )
