@@ -9,7 +9,7 @@ import Footer from './components/footers/footer'
 import Loader from './components/loaders/loader'
 
 //Icons
-import { BsFillArrowLeftSquareFill, BsArrowRight, BsArrowUpShort, BsBroadcast, BsFullscreenExit, BsDiagram3 } from 'react-icons/bs'
+import { BsFillArrowLeftSquareFill, BsArrowRight, BsArrowUpShort, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs'
 import { FaLuggageCart } from 'react-icons/fa'
 
 export default function App() {
@@ -91,7 +91,7 @@ export default function App() {
             <div class="row gy-4">
 
               <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-                <div class="icon flex-shrink-0"><i><FaLuggageCart /></i></div>
+                <div class="icon flex-shrink-0"><i className="fa-solid fa-cart-flatbed"><FaLuggageCart /></i></div>
                 <div>
                   <h4 class="title">Air Quality Index</h4>
                   <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
@@ -102,7 +102,7 @@ export default function App() {
               </div>
 
               <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon flex-shrink-0"><i class="bi bi-flower3"></i></div>
+                <div class="icon flex-shrink-0"><i class="bi bi-flower3"><BsFlower3 /></i></div>
                 <div>
                   <h4 class="title">Plant Recommendation</h4>
                   <p class="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
@@ -113,7 +113,7 @@ export default function App() {
               </div>
 
               <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon flex-shrink-0"><i class="bi bi-shop"></i></div>
+                <div class="icon flex-shrink-0"><i class="bi bi-shop"><BsShop /></i></div>
                 <div>
                   <h4 class="title">Plant Store</h4>
                   <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
@@ -146,21 +146,21 @@ export default function App() {
                 </p>
                 <ul>
                   <li data-aos="fade-up" data-aos-delay="100">
-                    <i class="bi bi-diagram-3"><BsDiagram3/></i>
+                    <i class="bi bi-diagram-3"><BsDiagram3 /></i>
                     <div>
                       <h5>Ullamco laboris nisi ut aliquip consequat</h5>
                       <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-fullscreen-exit"><BsFullscreenExit/></i>
+                    <i class="bi bi-fullscreen-exit"><BsFullscreenExit /></i>
                     <div>
                       <h5>Magnam soluta odio exercitationem reprehenderi</h5>
                       <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-broadcast"><BsBroadcast/></i>
+                    <i class="bi bi-broadcast"><BsBroadcast /></i>
                     <div>
                       <h5>Voluptatem et qui exercitationem</h5>
                       <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>

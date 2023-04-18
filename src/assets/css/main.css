@@ -132,6 +132,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url("../img/page-header.jpg");
 }
 
 .breadcrumbs .page-header:before {
