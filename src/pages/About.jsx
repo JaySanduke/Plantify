@@ -5,6 +5,10 @@ import Header from '../components/headers/header'
 import Footer from '../components/footers/footer'
 import Breadcrumb from '../components/breadcrumbs/breadcrumb'
 
+import { BsBroadcast, BsDiagram3, BsFullscreenExit } from 'react-icons/bs'
+import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
+
+
 export default function About() {
   return (
     <>
@@ -29,21 +33,27 @@ export default function About() {
                 </p>
                 <ul>
                   <li data-aos="fade-up" data-aos-delay="100">
-                    <i class="bi bi-diagram-3"></i>
+                    <i class="bi bi-diagram-3">
+                      <BsDiagram3 />
+                    </i>
                     <div>
                       <h5>Ullamco laboris nisi ut aliquip consequat</h5>
                       <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="200">
-                    <i class="bi bi-fullscreen-exit"></i>
+                    <i class="bi bi-fullscreen-exit">
+                      <BsFullscreenExit />
+                    </i>
                     <div>
                       <h5>Magnam soluta odio exercitationem reprehenderi</h5>
                       <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="300">
-                    <i class="bi bi-broadcast"></i>
+                    <i class="bi bi-broadcast">
+                      <BsBroadcast />
+                    </i>
                     <div>
                       <h5>Voluptatem et qui exercitationem</h5>
                       <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
@@ -117,10 +127,10 @@ export default function About() {
                       Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut
                     </p>
                     <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
+                      <a href="" class="twitter"><BsTwitter /><i class="bi bi-twitter"></i></a>
+                      <a href="" class="facebook"><BsFacebook /><i class="bi bi-facebook"></i></a>
+                      <a href="" class="instagram"><BsInstagram /><i class="bi bi-instagram"></i></a>
+                      <a href="" class="linkedin"><BsLinkedin /><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
@@ -137,10 +147,10 @@ export default function About() {
                       Repellat fugiat adipisci nemo illum nesciunt voluptas repellendus. In architecto rerum rerum temporibus
                     </p>
                     <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
+                      <a href="" class="twitter"><BsTwitter /><i class="bi bi-twitter"></i></a>
+                      <a href="" class="facebook"><BsFacebook /><i class="bi bi-facebook"></i></a>
+                      <a href="" class="instagram"><BsInstagram /><i class="bi bi-instagram"></i></a>
+                      <a href="" class="linkedin"><BsLinkedin /><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
@@ -156,10 +166,10 @@ export default function About() {
                       Voluptas necessitatibus occaecati quia. Earum totam consequuntur qui porro et laborum toro des clara
                     </p>
                     <div class="social">
-                      <a href=""><i class="bi bi-twitter"></i></a>
-                      <a href=""><i class="bi bi-facebook"></i></a>
-                      <a href=""><i class="bi bi-instagram"></i></a>
-                      <a href=""><i class="bi bi-linkedin"></i></a>
+                      <a href="" class="twitter"><BsTwitter /><i class="bi bi-twitter"></i></a>
+                      <a href="" class="facebook"><BsFacebook /><i class="bi bi-facebook"></i></a>
+                      <a href="" class="instagram"><BsInstagram /><i class="bi bi-instagram"></i></a>
+                      <a href="" class="linkedin"><BsLinkedin /><i class="bi bi-linkedin"></i></a>
                     </div>
                   </div>
                 </div>
