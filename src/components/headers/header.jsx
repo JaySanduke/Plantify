@@ -1,10 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 
+export default function header({ sticked }) {
 
-export default function header() {
     return (
-        <header id="header" className="header d-flex align-items-center fixed-top">
+        <header id="header" className={`header d-flex align-items-center fixed-top ${sticked ? "sticked" : null}`}>
             <div className="container-fluid container-xl d-flex align-items-center justify-content-between">
 
                 <a href="index.html" className="logo d-flex align-items-center">
@@ -17,9 +17,9 @@ export default function header() {
                 <nav id="navbar" className="navbar">
                     <ul>
                         <li><NavLink to={"/"}>Home</NavLink></li>
-                        <li><NavLink to={"/about"}>About</NavLink></li>
-                        <li><NavLink to={"/services"}>Services</NavLink></li>
-                        {/* <li><NavLink to={"/pricing"}>Pricing</NavLink></li> */}
+                        <li><NavLink to={"about"}>About</NavLink></li>
+                        <li><NavLink to={"services"}>Services</NavLink></li>
+                        {/* <li><NavLink to={"pricing"}>Pricing</NavLink></li> */}
                         {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
                             <ul>
                                 <li><a href="#">Drop Down 1</a></li>
@@ -45,4 +45,8 @@ export default function header() {
             </div>
         </header>
     )
+}
+
+header.defaultProps = {
+    sticked: false
 }

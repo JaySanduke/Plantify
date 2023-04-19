@@ -1,23 +1,31 @@
-import React from 'react'
+import React, { Children } from 'react'
+import { useLocation, Link } from 'react-router-dom'
 
-export default function breadcrumb() {
+export default function breadcrumb({ children }) {
+    const location = useLocation()
+    // console.log(location)
+
+    let currentLink = '';
+
+    const crumbs = location.pathname.split('/')
+        .filter((crumb) => crumb !== '')
+        .map((crumb, index) => {
+            currentLink += `/${crumb}`
+            return (
+                <li key={index + 1 + crumb}><Link to={currentLink}>{crumb}</Link></li>
+            )
+        })
+
+
+
     return (
         <div className="breadcrumbs">
-            <div className="page-header d-flex align-items-center" >
-                <div className="container position-relative">
-                    <div className="row d-flex justify-content-center">
-                        <div className="col-lg-6 text-center">
-                            <h2>About</h2>
-                            <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {children}
             <nav>
                 <div className="container">
                     <ol>
-                        <li><a href="index.html">Home</a></li>
-                        <li>About</li>
+                        <li key={0 + "home"}><Link to={'/'}>home</Link></li>
+                        {crumbs}
                     </ol>
                 </div>
             </nav>

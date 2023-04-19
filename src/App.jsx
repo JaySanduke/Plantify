@@ -1,22 +1,13 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
-// Components
-import Header from './components/headers/header'
-import Footer from './components/footers/footer'
-import Loader from './components/loaders/loader'
-
 //Icons
-import { BsFillArrowLeftSquareFill, BsArrowRight, BsArrowUpShort, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs'
+import { BsFillArrowLeftSquareFill, BsArrowRight, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs'
 import { FaLuggageCart } from 'react-icons/fa'
 
 export default function App() {
 
   return (
     <>
-      <Header />
       <section id="hero" className="hero d-flex align-items-center">
         <div className="container">
           <div className="row gy-4 d-flex justify-content-between">
@@ -131,7 +122,7 @@ export default function App() {
                 <img src="src/assets/img/garden.jpeg" className="img-fluid" alt="" />
                 <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
               </div>
-              <div className="col-lg-6 content order-last  order-lg-first">
+              <div className="col-lg-6 content order-last order-lg-first">
                 <h3>About Us</h3>
                 <p>
                   We at Plantify aim to simplify the process of selecting plants and help users create a healthy and
@@ -510,7 +501,6 @@ export default function App() {
           </div>
         </section> */}
 
-
         {/* <section id="faq" className="faq">
           <div className="container" data-aos="fade-up">
 
@@ -620,11 +610,6 @@ export default function App() {
         </section> */}
 
       </main>
-
-      <Footer />
-
-      <a href="#" className="scroll-top d-flex align-items-center justify-content-center"><i
-        className="bi bi-arrow-up-short"><BsArrowUpShort /></i></a>
     </>
   )
 }

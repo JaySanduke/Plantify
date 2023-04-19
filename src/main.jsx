@@ -3,14 +3,17 @@ import ReactDOM from 'react-dom/client'
 import {
   createBrowserRouter,
   RouterProvider,
+  createRoutesFromElements,
+  useNavigation
 } from 'react-router-dom'
 
-import Routes from './router/route'
 
 import './index.css'
 import './assets/scss/styles.scss'
 import './assets/css/main.css'
 import './assets/css/font.css'
+
+import Routes from './router/routes'
 
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
@@ -22,7 +25,9 @@ import * as GLightbox from 'glightbox'
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 
-const router = createBrowserRouter(Routes);
+const router = createBrowserRouter(
+  createRoutesFromElements(Routes())
+);
 
 const pure = new PureCounter({
   selector: '.purecounter'
@@ -41,7 +46,6 @@ AOS.init({
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    {/* <div id="preloader"></div> */}
-    <RouterProvider router={router} fallbackElement={<div>Wokring</div>} />
+    <RouterProvider router={router} />
   </React.StrictMode>,
 )

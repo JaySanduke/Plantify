@@ -1,4 +1,5 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 
 import { BsTwitter, BsFacebook, BsInstagram, BsLinkedin } from 'react-icons/bs'
 
@@ -12,7 +13,7 @@ export default function footer() {
                         <a href="index.html" className="logo d-flex align-items-center">
                             <span>Plantify</span>
                         </a>
-                        <p> Plantify operates on principles of sustainability, accessibility, community, and education, helping to promote a healthier and more connected society through the joys of gardening..</p>
+                        <p>Plantify operates on principles of sustainability, accessibility, community, and education, helping to promote a healthier and more connected society through the joys of gardening..</p>
                         <div className="social-links d-flex mt-4">
                             <a href="#" className="twitter"><BsTwitter /><i className="bi bi-twitter"></i></a>
                             <a href="#" className="facebook"><BsFacebook /><i className="bi bi-facebook"></i></a>
@@ -24,9 +25,10 @@ export default function footer() {
                     <div className="col-lg-2 col-6 footer-links">
                         <h4>Useful Links</h4>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About us</a></li>
-                            <li><a href="#">Services</a></li>
+                            <li><NavLink to={"/"}>Home</NavLink></li>
+                            <li><NavLink to={"about"}>About Us</NavLink></li>
+                            <li><NavLink to={"services"}>Services</NavLink></li>
+                            <li><NavLink to={"pricing"}>Pricing</NavLink></li>
                             <li><a href="#">Terms of service</a></li>
                             <li><a href="#">Privacy policy</a></li>
                         </ul>
@@ -35,8 +37,8 @@ export default function footer() {
                     <div className="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="#">Air Qualtiy Index</a></li>
-                            <li><a href="#">Plant Recommendation</a></li>
+                            <li><a href="#">Air Quality Index</a></li>
+                            <li><a href="#">Plant Recommandation</a></li>
                             <li><a href="#">Plant Store</a></li>
                             <li><a href="#">Gardening Tips</a></li>
                             <li><a href="#">Community</a></li>
@@ -46,11 +48,12 @@ export default function footer() {
                     <div className="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                         <h4>Contact Us</h4>
                         <p>
-                            A108 Adam Street <br />
-                            New York, NY 535022<br />
-                            United States <br /><br />
-                            <strong>Phone:</strong> +1 5589 55488 55<br />
-                            <strong>Email:</strong> info@example.com<br />
+                            RGPV<br />
+                            Airport Rd, Abbas Nagar, Gandhi Nagar<br />
+                            Bhopal, 462033<br />
+                            Madhya Pradesh, India <br /><br />
+                            <strong>Phone:</strong> +91 12345 67891<br />
+                            <strong>Email:</strong> support@plantify.com<br />
                         </p>
 
                     </div>
