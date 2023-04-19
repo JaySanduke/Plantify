@@ -19,7 +19,7 @@ export default function header() {
                         <li><NavLink to={"/"}>Home</NavLink></li>
                         <li><NavLink to={"/about"}>About</NavLink></li>
                         <li><NavLink to={"/services"}>Services</NavLink></li>
-                        <li><NavLink to={"/pricing"}>Pricing</NavLink></li>
+                        {/* <li><NavLink to={"/pricing"}>Pricing</NavLink></li> */}
                         {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
                             <ul>
                                 <li><a href="#">Drop Down 1</a></li>

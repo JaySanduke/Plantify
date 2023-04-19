@@ -10,10 +10,9 @@ export default function footer() {
                 <div className="row gy-4">
                     <div className="col-lg-5 col-md-12 footer-info">
                         <a href="index.html" className="logo d-flex align-items-center">
-                            <span>Logis</span>
+                            <span>Plantify</span>
                         </a>
-                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta
-                            donna mare fermentum iaculis eu non diam phasellus.</p>
+                        <p> Plantify operates on principles of sustainability, accessibility, community, and education, helping to promote a healthier and more connected society through the joys of gardening..</p>
                         <div className="social-links d-flex mt-4">
                             <a href="#" className="twitter"><BsTwitter /><i className="bi bi-twitter"></i></a>
                             <a href="#" className="facebook"><BsFacebook /><i className="bi bi-facebook"></i></a>
@@ -36,11 +35,11 @@ export default function footer() {
                     <div className="col-lg-2 col-6 footer-links">
                         <h4>Our Services</h4>
                         <ul>
-                            <li><a href="#">Web Design</a></li>
-                            <li><a href="#">Web Development</a></li>
-                            <li><a href="#">Product Management</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Graphic Design</a></li>
+                            <li><a href="#">Air Qualtiy Index</a></li>
+                            <li><a href="#">Plant Recommendation</a></li>
+                            <li><a href="#">Plant Store</a></li>
+                            <li><a href="#">Gardening Tips</a></li>
+                            <li><a href="#">Community</a></li>
                         </ul>
                     </div>
 
@@ -61,7 +60,7 @@ export default function footer() {
 
             <div className="container mt-4">
                 <div className="copyright">
-                    &copy; Copyright <strong><span>Logis</span></strong>. All Rights Reserved
+                    &copy; Copyright <strong><span>Plantify</span></strong>. All Rights Reserved
                 </div>
                 {/* <div className="credits">
                     All the links in the footer should remain intact.

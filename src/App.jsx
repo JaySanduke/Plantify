@@ -128,8 +128,8 @@ export default function App() {
 
             <div className="row gy-4">
               <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                <img src="src/assets/img/about.jpg" className="img-fluid" alt="" />
-                <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" className="glightbox play-btn"></a>
+                <img src="src/assets/img/garden.jpeg" className="img-fluid" alt="" />
+                <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
               </div>
               <div className="col-lg-6 content order-last  order-lg-first">
                 <h3>About Us</h3>
@@ -142,22 +142,23 @@ export default function App() {
                   <li data-aos="fade-up" data-aos-delay="100">
                     <i className="bi bi-diagram-3"><BsDiagram3 /></i>
                     <div>
-                      <h5>Ullamco laboris nisi ut aliquip consequat</h5>
-                      <p>Magni facilis facilis repellendus cum excepturi quaerat praesentium libre trade</p>
+                      <h5>Sustainability</h5>
+                      <p>Plantify promotes sustainable gardening practices that reduce environmental impact and promote biodiversity.
+                        By encouraging the use of native plants and minimizing the use of chemical pesticides and fertilizers, Plantify can help users create gardens that are both beautiful and ecologically responsible.</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="200">
                     <i className="bi bi-fullscreen-exit"><BsFullscreenExit /></i>
                     <div>
-                      <h5>Magnam soluta odio exercitationem reprehenderi</h5>
-                      <p>Quo totam dolorum at pariatur aut distinctio dolorum laudantium illo direna pasata redi</p>
+                      <h5>Accessibility</h5>
+                      <p>Plantify aims to make gardening accessible to everyone, regardless of their level of experience or expertise. By providing personalized plant recommendations and expert advice, Plantify can help users overcome common gardening challenges and enjoy the benefits of gardening, such as improved mental health and a connection to nature.</p>
                     </div>
                   </li>
                   <li data-aos="fade-up" data-aos-delay="300">
                     <i className="bi bi-broadcast"><BsBroadcast /></i>
                     <div>
-                      <h5>Voluptatem et qui exercitationem</h5>
-                      <p>Et velit et eos maiores est tempora et quos dolorem autem tempora incidunt maxime veniam</p>
+                      <h5>Community</h5>
+                      <p> Plantify fosters a sense of community among its users, encouraging them to share their gardening experiences, tips, and advice. By connecting users with like-minded individuals, Plantify can help build a community of gardeners who share a passion for gardening and a commitment to sustainable practices.</p>
                     </div>
                   </li>
                 </ul>
@@ -274,76 +275,70 @@ export default function App() {
             <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
               <div className="col-md-5">
-                <img src="src/assets/img/features-1.jpg" className="img-fluid" alt="" />
+                <img src="src/assets/img/personalised.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-md-7">
-                <h3>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+                <h3>Personalized plant recommendations</h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna aliqua.
+                  Plantify takes into account various factors specific to a user's location and environment to recommend plants that will thrive in their garden.
                 </p>
-                <ul>
+                {/* <ul>
                   <li><i className="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   <li><i className="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                   <li><i className="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
 
             <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
-                <img src="src/assets/img/features-2.jpg" className="img-fluid" alt="" />
+                <img src="src/assets/img/mobile.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-md-7 order-2 order-md-1">
-                <h3>Corporis temporibus maiores provident</h3>
+                <h3>Convenient plant shopping</h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna aliqua.
+                  Users can easily purchase plants and gardening accessories directly from the app, saving them time and effort.
                 </p>
-                <p>
+                {/* <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                   voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                </p> */}
               </div>
             </div>
 
             <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
               <div className="col-md-5">
-                <img src="src/assets/img/features-3.jpg" className="img-fluid" alt="" />
+                <img src="src/assets/img/gardening.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-md-7">
-                <h3>Sunt consequatur ad ut est nulla consectetur reiciendis animi voluptas</h3>
-                <p>Cupiditate placeat cupiditate placeat est ipsam culpa. Delectus quia minima quod. Sunt saepe odit aut
-                  quia voluptatem hic voluptas dolor doloremque.</p>
-                <ul>
+                <h3>Expert gardening advice</h3>
+                <p>Plantify provides users with detailed information about each recommended plant, including tips for planting,
+                  watering, and general care. Additionally, users can access gardening tips and advice for each recommended plant, making it easier to maintain a healthy garden.</p>
+                {/* <ul>
                   <li><i className="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   <li><i className="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                   <li><i className="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
-                </ul>
+                </ul> */}
               </div>
             </div>
 
             <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
               <div className="col-md-5 order-1 order-md-2">
-                <img src="src/assets/img/features-4.jpg" className="img-fluid" alt="" />
+                <img src="src/assets/img/time.jpg" className="img-fluid" alt="" />
               </div>
               <div className="col-md-7 order-2 order-md-1">
-                <h3>Quas et necessitatibus eaque impedit ipsum animi consequatur incidunt in</h3>
+                <h3>Saves time and money</h3>
                 <p className="fst-italic">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                  dolore
-                  magna aliqua.
+                  By using Plantify, users can avoid the trial and error of choosing plants that may not thrive in their environment. This can save them time and money, as well as provide them with a more satisfying gardening experience.
                 </p>
-                <p>
+                {/* <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                   voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum
-                </p>
+                </p> */}
               </div>
             </div>
 
@@ -351,7 +346,7 @@ export default function App() {
         </section>
 
 
-        <section id="pricing" className="pricing pt-0">
+        {/* <section id="pricing" className="pricing pt-0">
           <div className="container" data-aos="fade-up">
 
             <div className="section-header">
@@ -410,9 +405,9 @@ export default function App() {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
-        <section id="testimonials" className="testimonials">
+        {/* <section id="testimonials" className="testimonials">
           <div className="container">
 
             <div className="slides-1 swiper" data-aos="fade-up">
@@ -513,10 +508,10 @@ export default function App() {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
 
-        <section id="faq" className="faq">
+        {/* <section id="faq" className="faq">
           <div className="container" data-aos="fade-up">
 
             <div className="section-header">
@@ -622,7 +617,7 @@ export default function App() {
             </div>
 
           </div>
-        </section>
+        </section> */}
 
       </main>
 
