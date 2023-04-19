@@ -1,12 +1,6 @@
 import React from 'react'
+import { Link, NavLink } from 'react-router-dom'
 
-const selectHeader = document.querySelector('#header');
-
-if (selectHeader) {
-    document.addEventListener('scroll', () => {
-        window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
-    });
-}
 
 export default function header() {
     return (
@@ -22,10 +16,10 @@ export default function header() {
                 <i className="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
                 <nav id="navbar" className="navbar">
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html" className="active">About</a></li>
-                        <li><a href="services.html">Services</a></li>
-                        <li><a href="pricing.html">Pricing</a></li>
+                        <li><NavLink to={"/"}>Home</NavLink></li>
+                        <li><NavLink to={"/about"}>About</NavLink></li>
+                        <li><NavLink to={"/services"}>Services</NavLink></li>
+                        <li><NavLink to={"/pricing"}>Pricing</NavLink></li>
                         {/* <li className="dropdown"><a href="#"><span>Drop Down</span> <i className="bi bi-chevron-down dropdown-indicator"></i></a>
                             <ul>
                                 <li><a href="#">Drop Down 1</a></li>
@@ -43,7 +37,7 @@ export default function header() {
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li> */}
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><Link to={"/contact"}>Contact</Link></li>
                         {/* <li><a className="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> */}
                     </ul>
                 </nav>

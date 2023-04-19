@@ -39,16 +39,9 @@ AOS.init({
   mirror: false
 });
 
-// window.addEventListener('load', () => {
-//   const preloader = document.getElementById('preloader');
-//   if (preloader) {
-//     preloader.remove();
-//   }
-// });
-
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <div id="preloader"></div> */}
-    <RouterProvider router={router} />
+    <RouterProvider router={router} fallbackElement={<div>Wokring</div>} />
   </React.StrictMode>,
 )

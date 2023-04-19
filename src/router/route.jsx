@@ -6,7 +6,7 @@ import About from '../pages/About';
 const routes = [
     {
         path: '/',
-        element: <App />
+        element: <App />,
     },
     {
         path: '/about',
