@@ -1,14 +1,28 @@
 import React, { useState } from 'react'
-import { Outlet, useNavigation } from 'react-router-dom'
+import { Outlet, useLocation, useNavigation } from 'react-router-dom'
 
 //Components
 import Header from '../components/headers/header'
 import Footer from '../components/footers/footer'
 import Loader from '../components/loaders/loader'
 import Scrolltotopbutton from '../components/scrolltotop/scrolltotopbutton'
+import Hero from '../components/heros/hero'
 
 export default function rootLayout() {
+
+    const location = useLocation()
+
     const navigation = useNavigation()
+    const [loading, setLoading] = useState(true)
+
+    if (navigation.state == "loading") {
+        setLoading(true)
+    }
+    else {
+        setTimeout(() => {
+            setLoading(false)
+        }, 1000)
+    }
 
     const [sticked, setSticked] = useState(false)
 
@@ -38,13 +52,16 @@ export default function rootLayout() {
 
     return (
         <>
-            {navigation.state == "loading" ? <Loader /> : null}
+            {loading ? <Loader /> : null}
             <Header sticked={sticked} />
-            <main id="main">
+            {(location.pathname === "/") ? <Hero /> : null}
+            <main id="main" onLoad={() => {
+                scrollTo(0, 0)
+            }}>
                 <Outlet />
             </main>
-            <Scrolltotopbutton active={active} />
             <Footer />
+            <Scrolltotopbutton active={active} />
         </>
     )
 }

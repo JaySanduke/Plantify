@@ -1,343 +1,282 @@
 import './App.css'
 
 //Icons
-import { BsFillArrowLeftSquareFill, BsArrowRight, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs'
+import { BsArrowRight, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs'
 import { FaLuggageCart } from 'react-icons/fa'
 
 export default function App() {
 
   return (
     <>
-      <section id="hero" className="hero d-flex align-items-center">
+
+      <section id="featured-services" className="featured-services">
         <div className="container">
-          <div className="row gy-4 d-flex justify-content-between">
-            <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-              <h2 data-aos="fade-up">Find your perfect plant match</h2>
-              <p data-aos="fade-up" data-aos-delay="100">Simplify the process of selecting plants and create a
-                healthy and thriving garden. Additionally, choose from a wide variety to purchase plants and gardening
-                accessories,
-                making the process of gardening even more convenient.</p>
 
-              <form action="#" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                <input type="text" className="form-control" placeholder="ZIP code or City or location pin"></input>
-                <button type="submit" className="btn btn-primary">Search</button>
-              </form>
+          <div className="row gy-4">
 
-              <div className="row gy-4" data-aos="fade-up" data-aos-delay="400">
-
-                <div className="col-lg-3 col-6">
-                  <div className="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
-                      className="purecounter"></span>
-                    <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><BsFillArrowLeftSquareFill /></i>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 col-6">
-                  <div className="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1"
-                      className="purecounter"></span>
-                    <p>Sunlight</p>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 col-6">
-                  <div className="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="1453" data-purecounter-duration="1"
-                      className="purecounter"></span>
-                    <p>Rainfall</p>
-                  </div>
-                </div>
-
-                <div className="col-lg-3 col-6">
-                  <div className="stats-item text-center w-100 h-100">
-                    <span data-purecounter-start="0" data-purecounter-end="32" data-purecounter-duration="1"
-                      className="purecounter"></span>
-                    <p>Soil</p>
-                  </div>
-                </div>
-
+            <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+              <div className="icon flex-shrink-0"><i className="fa-solid fa-cart-flatbed"><FaLuggageCart /></i></div>
+              <div>
+                <h4 className="title">Air Quality Index</h4>
+                <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
+                  occaecati cupiditate non provident</p>
+                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
               </div>
             </div>
 
-            <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-              <img src="src/assets/img/plants-removebg-preview.png" className="img-fluid mb-3 mb-lg-0" alt="" />
+            <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+              <div className="icon flex-shrink-0"><i className="bi bi-flower3"><BsFlower3 /></i></div>
+              <div>
+                <h4 className="title">Plant Recommendation</h4>
+                <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo consequat tarad limino ata</p>
+                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
+              </div>
+            </div>
+
+            <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div className="icon flex-shrink-0"><i className="bi bi-shop"><BsShop /></i></div>
+              <div>
+                <h4 className="title">Plant Store</h4>
+                <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                  fugiat nulla pariatur</p>
+                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
+              </div>
             </div>
 
           </div>
+
         </div>
       </section>
 
-      <main id="main">
 
-        <section id="featured-services" className="featured-services">
-          <div className="container">
+      <section id="about" className="about pt-0">
+        <div className="container" data-aos="fade-up">
 
-            <div className="row gy-4">
-
-              <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
-                <div className="icon flex-shrink-0"><i className="fa-solid fa-cart-flatbed"><FaLuggageCart /></i></div>
-                <div>
-                  <h4 className="title">Air Quality Index</h4>
-                  <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                    occaecati cupiditate non provident</p>
-                  <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                    className="bi bi-arrow-right"><BsArrowRight /></i></a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
-                <div className="icon flex-shrink-0"><i className="bi bi-flower3"><BsFlower3 /></i></div>
-                <div>
-                  <h4 className="title">Plant Recommendation</h4>
-                  <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                    commodo consequat tarad limino ata</p>
-                  <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                    className="bi bi-arrow-right"><BsArrowRight /></i></a>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
-                <div className="icon flex-shrink-0"><i className="bi bi-shop"><BsShop /></i></div>
-                <div>
-                  <h4 className="title">Plant Store</h4>
-                  <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                    fugiat nulla pariatur</p>
-                  <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                    className="bi bi-arrow-right"><BsArrowRight /></i></a>
-                </div>
-              </div>
-
+          <div className="row gy-4">
+            <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
+              <img src="src/assets/img/garden.jpeg" className="img-fluid" alt="" />
+              <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
             </div>
+            <div className="col-lg-6 content order-last order-lg-first">
+              <h3>About Us</h3>
+              <p>
+                We at Plantify aim to simplify the process of selecting plants and help users create a healthy and
+                thriving garden. Additionally, the app also provides users with the option to purchase plants and
+                gardening accessories, making the process of gardening even more convenient.
+              </p>
+              <ul>
+                <li data-aos="fade-up" data-aos-delay="100">
+                  <i className="bi bi-diagram-3"><BsDiagram3 /></i>
+                  <div>
+                    <h5>Sustainability</h5>
+                    <p>Plantify promotes sustainable gardening practices that reduce environmental impact and promote biodiversity.
+                      By encouraging the use of native plants and minimizing the use of chemical pesticides and fertilizers, Plantify can help users create gardens that are both beautiful and ecologically responsible.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="200">
+                  <i className="bi bi-fullscreen-exit"><BsFullscreenExit /></i>
+                  <div>
+                    <h5>Accessibility</h5>
+                    <p>Plantify aims to make gardening accessible to everyone, regardless of their level of experience or expertise. By providing personalized plant recommendations and expert advice, Plantify can help users overcome common gardening challenges and enjoy the benefits of gardening, such as improved mental health and a connection to nature.</p>
+                  </div>
+                </li>
+                <li data-aos="fade-up" data-aos-delay="300">
+                  <i className="bi bi-broadcast"><BsBroadcast /></i>
+                  <div>
+                    <h5>Community</h5>
+                    <p> Plantify fosters a sense of community among its users, encouraging them to share their gardening experiences, tips, and advice. By connecting users with like-minded individuals, Plantify can help build a community of gardeners who share a passion for gardening and a commitment to sustainable practices.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <section id="service" className="services pt-0">
+        <div className="container" data-aos="fade-up">
+
+          <div className="section-header">
+            <span>Our Services</span>
+            <h2>Our Services</h2>
 
           </div>
-        </section>
 
+          <div className="row gy-4">
 
-        <section id="about" className="about pt-0">
-          <div className="container" data-aos="fade-up">
-
-            <div className="row gy-4">
-              <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
-                <img src="src/assets/img/garden.jpeg" className="img-fluid" alt="" />
-                <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
-              </div>
-              <div className="col-lg-6 content order-last order-lg-first">
-                <h3>About Us</h3>
-                <p>
-                  We at Plantify aim to simplify the process of selecting plants and help users create a healthy and
-                  thriving garden. Additionally, the app also provides users with the option to purchase plants and
-                  gardening accessories, making the process of gardening even more convenient.
-                </p>
-                <ul>
-                  <li data-aos="fade-up" data-aos-delay="100">
-                    <i className="bi bi-diagram-3"><BsDiagram3 /></i>
-                    <div>
-                      <h5>Sustainability</h5>
-                      <p>Plantify promotes sustainable gardening practices that reduce environmental impact and promote biodiversity.
-                        By encouraging the use of native plants and minimizing the use of chemical pesticides and fertilizers, Plantify can help users create gardens that are both beautiful and ecologically responsible.</p>
-                    </div>
-                  </li>
-                  <li data-aos="fade-up" data-aos-delay="200">
-                    <i className="bi bi-fullscreen-exit"><BsFullscreenExit /></i>
-                    <div>
-                      <h5>Accessibility</h5>
-                      <p>Plantify aims to make gardening accessible to everyone, regardless of their level of experience or expertise. By providing personalized plant recommendations and expert advice, Plantify can help users overcome common gardening challenges and enjoy the benefits of gardening, such as improved mental health and a connection to nature.</p>
-                    </div>
-                  </li>
-                  <li data-aos="fade-up" data-aos-delay="300">
-                    <i className="bi bi-broadcast"><BsBroadcast /></i>
-                    <div>
-                      <h5>Community</h5>
-                      <p> Plantify fosters a sense of community among its users, encouraging them to share their gardening experiences, tips, and advice. By connecting users with like-minded individuals, Plantify can help build a community of gardeners who share a passion for gardening and a commitment to sustainable practices.</p>
-                    </div>
-                  </li>
-                </ul>
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img5.jpg" alt="" className="img-fluid" />
+                </div>
+                <h3><a href="service-details.html" className="stretched-link">Air Quality Index</a></h3>
+                <p>Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus
+                  temporibus itaqueofficiis odit</p>
               </div>
             </div>
 
-          </div>
-        </section>
-
-
-        <section id="service" className="services pt-0">
-          <div className="container" data-aos="fade-up">
-
-            <div className="section-header">
-              <span>Our Services</span>
-              <h2>Our Services</h2>
-
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img4.jpg" alt="" className="img-fluid" />
+                </div>
+                <h3><a href="service-details.html" className="stretched-link">Plant Recommendation</a></h3>
+                <p>Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae
+                  dolor ipsam ducimus occaecati nisi</p>
+              </div>
             </div>
 
-            <div className="row gy-4">
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img5.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Air Quality Index</a></h3>
-                  <p>Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus
-                    temporibus itaqueofficiis odit</p>
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img6.jpg" alt="" className="img-fluid" />
                 </div>
+                <h3><a href="service-details.html" className="stretched-link">Plant Store</a></h3>
+                <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
+                  aut et molestiae ut et nihil</p>
               </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img4.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Plant Recommendation</a></h3>
-                  <p>Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae
-                    dolor ipsam ducimus occaecati nisi</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img6.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Plant Store</a></h3>
-                  <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
-                    aut et molestiae ut et nihil</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img7.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Gardening Tips</a></h3>
-                  <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
-                    aut et molestiae ut et nihil</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img8.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Community</a></h3>
-                  <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores
-                    beatae consequatur magni voluptates</p>
-                </div>
-              </div>
-
-              <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
-                <div className="card">
-                  <div className="card-img">
-                    <img src="src/assets/img/img9.jpg" alt="" className="img-fluid" />
-                  </div>
-                  <h3><a href="service-details.html" className="stretched-link">Enviorment Analysis</a></h3>
-                  <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut
-                    nostrum unde et qui est non quo nulla</p>
-                </div>
-              </div>
-
             </div>
 
-          </div>
-        </section>
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img7.jpg" alt="" className="img-fluid" />
+                </div>
+                <h3><a href="service-details.html" className="stretched-link">Gardening Tips</a></h3>
+                <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
+                  aut et molestiae ut et nihil</p>
+              </div>
+            </div>
 
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img8.jpg" alt="" className="img-fluid" />
+                </div>
+                <h3><a href="service-details.html" className="stretched-link">Community</a></h3>
+                <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores
+                  beatae consequatur magni voluptates</p>
+              </div>
+            </div>
 
-        <section id="call-to-action" className="call-to-action">
-          <div className="container" data-aos="zoom-out">
-
-            <div className="row justify-content-center">
-              <div className="col-lg-8 text-center">
-                <h3>Call To Action</h3>
-                <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                  Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                  laborum.</p>
-                <a className="cta-btn" href="#">Call To Action</a>
+            <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+              <div className="card">
+                <div className="card-img">
+                  <img src="src/assets/img/img9.jpg" alt="" className="img-fluid" />
+                </div>
+                <h3><a href="service-details.html" className="stretched-link">Enviorment Analysis</a></h3>
+                <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut
+                  nostrum unde et qui est non quo nulla</p>
               </div>
             </div>
 
           </div>
-        </section>
+
+        </div>
+      </section>
 
 
-        <section id="features" className="features">
-          <div className="container">
+      <section id="call-to-action" className="call-to-action">
+        <div className="container" data-aos="zoom-out">
 
-            <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
+          <div className="row justify-content-center">
+            <div className="col-lg-8 text-center">
+              <h3>Call To Action</h3>
+              <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                laborum.</p>
+              <a className="cta-btn" href="#">Call To Action</a>
+            </div>
+          </div>
 
-              <div className="col-md-5">
-                <img src="src/assets/img/personalised.jpg" className="img-fluid" alt="" />
-              </div>
-              <div className="col-md-7">
-                <h3>Personalized plant recommendations</h3>
-                <p className="fst-italic">
-                  Plantify takes into account various factors specific to a user's location and environment to recommend plants that will thrive in their garden.
-                </p>
-                {/* <ul>
+        </div>
+      </section>
+
+
+      <section id="features" className="features">
+        <div className="container">
+
+          <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+            <div className="col-md-5">
+              <img src="src/assets/img/personalised.jpg" className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-7">
+              <h3>Personalized plant recommendations</h3>
+              <p className="fst-italic">
+                Plantify takes into account various factors specific to a user's location and environment to recommend plants that will thrive in their garden.
+              </p>
+              {/* <ul>
                   <li><i className="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   <li><i className="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                   <li><i className="bi bi-check"></i> Ullam est qui quos consequatur eos accusamus.</li>
                 </ul> */}
-              </div>
             </div>
+          </div>
 
-            <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
-              <div className="col-md-5 order-1 order-md-2">
-                <img src="src/assets/img/mobile.jpg" className="img-fluid" alt="" />
-              </div>
-              <div className="col-md-7 order-2 order-md-1">
-                <h3>Convenient plant shopping</h3>
-                <p className="fst-italic">
-                  Users can easily purchase plants and gardening accessories directly from the app, saving them time and effort.
-                </p>
-                {/* <p>
+          <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div className="col-md-5 order-1 order-md-2">
+              <img src="src/assets/img/mobile.jpg" className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-7 order-2 order-md-1">
+              <h3>Convenient plant shopping</h3>
+              <p className="fst-italic">
+                Users can easily purchase plants and gardening accessories directly from the app, saving them time and effort.
+              </p>
+              {/* <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                   voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p> */}
-              </div>
             </div>
+          </div>
 
-            <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
-              <div className="col-md-5">
-                <img src="src/assets/img/gardening.jpg" className="img-fluid" alt="" />
-              </div>
-              <div className="col-md-7">
-                <h3>Expert gardening advice</h3>
-                <p>Plantify provides users with detailed information about each recommended plant, including tips for planting,
-                  watering, and general care. Additionally, users can access gardening tips and advice for each recommended plant, making it easier to maintain a healthy garden.</p>
-                {/* <ul>
+          <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div className="col-md-5">
+              <img src="src/assets/img/gardening.jpg" className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-7">
+              <h3>Expert gardening advice</h3>
+              <p>Plantify provides users with detailed information about each recommended plant, including tips for planting,
+                watering, and general care. Additionally, users can access gardening tips and advice for each recommended plant, making it easier to maintain a healthy garden.</p>
+              {/* <ul>
                   <li><i className="bi bi-check"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
                   <li><i className="bi bi-check"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
                   <li><i className="bi bi-check"></i> Facilis ut et voluptatem aperiam. Autem soluta ad fugiat.</li>
                 </ul> */}
-              </div>
             </div>
+          </div>
 
-            <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
-              <div className="col-md-5 order-1 order-md-2">
-                <img src="src/assets/img/time.jpg" className="img-fluid" alt="" />
-              </div>
-              <div className="col-md-7 order-2 order-md-1">
-                <h3>Saves time and money</h3>
-                <p className="fst-italic">
-                  By using Plantify, users can avoid the trial and error of choosing plants that may not thrive in their environment. This can save them time and money, as well as provide them with a more satisfying gardening experience.
-                </p>
-                {/* <p>
+          <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
+            <div className="col-md-5 order-1 order-md-2">
+              <img src="src/assets/img/time.jpg" className="img-fluid" alt="" />
+            </div>
+            <div className="col-md-7 order-2 order-md-1">
+              <h3>Saves time and money</h3>
+              <p className="fst-italic">
+                By using Plantify, users can avoid the trial and error of choosing plants that may not thrive in their environment. This can save them time and money, as well as provide them with a more satisfying gardening experience.
+              </p>
+              {/* <p>
                   Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                   voluptate
                   velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
                   culpa qui officia deserunt mollit anim id est laborum
                 </p> */}
-              </div>
             </div>
-
           </div>
-        </section>
+
+        </div>
+      </section>
 
 
-        {/* <section id="pricing" className="pricing pt-0">
+      {/* <section id="pricing" className="pricing pt-0">
           <div className="container" data-aos="fade-up">
 
             <div className="section-header">
@@ -398,7 +337,7 @@ export default function App() {
           </div>
         </section> */}
 
-        {/* <section id="testimonials" className="testimonials">
+      {/* <section id="testimonials" className="testimonials">
           <div className="container">
 
             <div className="slides-1 swiper" data-aos="fade-up">
@@ -501,7 +440,7 @@ export default function App() {
           </div>
         </section> */}
 
-        {/* <section id="faq" className="faq">
+      {/* <section id="faq" className="faq">
           <div className="container" data-aos="fade-up">
 
             <div className="section-header">
@@ -609,7 +548,6 @@ export default function App() {
           </div>
         </section> */}
 
-      </main>
     </>
   )
 }
