@@ -20,7 +20,7 @@ import * as bootstrap from 'bootstrap'
 
 import * as PureCounter from '@srexi/purecounterjs'
 
-import * as GLightbox from 'glightbox'
+// import * as GLightbox from 'glightbox'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
@@ -33,9 +33,9 @@ const pure = new PureCounter({
   selector: '.purecounter'
 });
 
-const lightbox = GLightbox({
-  selector: '.glightbox'
-});
+// const lightbox = GLightbox({
+//   selector: '.glightbox'
+// });
 
 AOS.init({
   duration: 1000,

@@ -57,7 +57,7 @@ export default function hero() {
                     </div>
 
                     <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                        {/* <img src="src/assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt="" /> */}
+                        <img src="src/assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt="" />
                     </div>
 
                 </div>
