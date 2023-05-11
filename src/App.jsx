@@ -52,7 +52,6 @@ export default function App() {
         </div>
       </section>
 
-
       <section id="about" className="about pt-0">
         <div className="container" data-aos="fade-up">
 
