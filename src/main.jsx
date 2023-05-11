@@ -18,8 +18,6 @@ import Routes from './router/routes'
 // Import all of Bootstrap's JS
 import * as bootstrap from 'bootstrap'
 
-import * as PureCounter from '@srexi/purecounterjs'
-
 // import * as GLightbox from 'glightbox'
 
 import AOS from 'aos';
@@ -28,10 +26,6 @@ import 'aos/dist/aos.css'; // You can also use <link> for styles
 const router = createBrowserRouter(
   createRoutesFromElements(Routes())
 );
-
-const pure = new PureCounter({
-  selector: '.purecounter'
-});
 
 // const lightbox = GLightbox({
 //   selector: '.glightbox'
