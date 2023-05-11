@@ -12,7 +12,6 @@ export default defineConfig({
   },
   build: {
     outDir: 'dist',
-    cssMinify: false,
-    minify: false,
+    cssMinify: false
   }
 })
