@@ -27,7 +27,7 @@ export default function services() {
                                 <img src="src/assets/img/img4.jpg" alt="" className="img-fluid" />
                             </div>
                             <h3><a href="#" className="stretched-link">Plant Recommendation</a></h3>
-                            <p></p>
+                            <p>We recommend best plants to individuals about what types of plants would be suitable for their specific needs, preferences, and growing conditions. This could include recommendations for indoor plants, outdoor plants, ornamental plants, edible plants, or plants that have specific health or environmental benefits.</p>
                         </div>
                     </div>
 
