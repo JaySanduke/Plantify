@@ -1,5 +1,8 @@
 // Components
 import Breadcrumb from '../components/breadcrumbs/breadcrumb'
+import ServicesSection from '../components/sections/services'
+
+// Icons
 import { FaLuggageCart } from 'react-icons/fa'
 import { BsArrowRight, BsFlower3, BsShop } from 'react-icons/bs'
 
@@ -67,9 +70,10 @@ export default function Services() {
 
                 </div>
             </section>
+            
+            <ServicesSection />
 
-
-            <section id="service" className="services pt-0">
+            {/* <section id="service" className="services pt-0">
                 <div className="container" data-aos="fade-up">
 
                     <div className="section-header">
@@ -149,7 +153,7 @@ export default function Services() {
                     </div>
 
                 </div>
-            </section>
+            </section> */}
 
 
             {/* <section id="features" className="features">

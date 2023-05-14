@@ -1,4 +1,3 @@
-import { Bs0Circle } from 'react-icons/bs'
 import '../assets/css/pap.css'
 
 export default function PollutantsAndPlants() {
@@ -16,42 +15,65 @@ export default function PollutantsAndPlants() {
                             <div className="stats-item text-center w-100 h-100">
                                 <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                                     className="purecounter">4654</span>
-                                <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i>
+                                <p>Air Quality Index (AQI)</p>
+                                {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
                             </div>
 
 
                         </div>
                         <div className="row mt-5 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="400">
 
-                            <div className="col-lg-3 col-6">
+                            <div className="col-lg-2 col-6">
                                 <div className="stats-item text-center w-100 h-100">
                                     <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                                         className="purecounter"></span>
-                                    <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i>
+                                    <p>SO<sub>2</sub></p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-6">
+                            <div className="col-lg-2 col-6">
                                 <div className="stats-item text-center w-100 h-100">
                                     <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                                         className="purecounter"></span>
-                                    <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i>
+                                    <p>NO<sub>2</sub></p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-6">
+                            <div className="col-lg-2 col-6">
                                 <div className="stats-item text-center w-100 h-100">
                                     <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                                         className="purecounter"></span>
-                                    <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i>
+                                    <p>PM 10</p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
                                 </div>
                             </div>
 
-                            <div className="col-lg-3 col-6">
+                            <div className="col-lg-2 col-6">
                                 <div className="stats-item text-center w-100 h-100">
                                     <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
                                         className="purecounter"></span>
-                                    <p>Air Quality Index</p><i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i>
+                                    <p>PM 2.5</p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
+                                </div>
+                            </div>
+
+                            <div className="col-lg-2 col-6">
+                                <div className="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                                        className="purecounter"></span>
+                                    <p>O<sub>3</sub></p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
+                                </div>
+                            </div>
+
+                            <div className="col-lg-2 col-6">
+                                <div className="stats-item text-center w-100 h-100">
+                                    <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1"
+                                        className="purecounter"></span>
+                                    <p>CO</p>
+                                    {/* <i className="bi bi-arrow-left-square-fill"><Bs0Circle /></i> */}
                                 </div>
                             </div>
 

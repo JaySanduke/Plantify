@@ -1,6 +1,6 @@
-
 // Components
 import Hero from './components/heros/hero.jsx'
+import Services from './components/sections/services.jsx';
 
 import './App.css';
 
@@ -108,8 +108,8 @@ export default function App() {
         </div>
       </section>
 
-
-      <section id="service" className="services pt-0">
+      <Services />
+      {/* <section id="service" className="services pt-0">
         <div className="container" data-aos="fade-up">
 
           <div className="section-header">
@@ -189,7 +189,7 @@ export default function App() {
           </div>
 
         </div>
-      </section>
+      </section> */}
 
 
       <section id="call-to-action" className="call-to-action">
