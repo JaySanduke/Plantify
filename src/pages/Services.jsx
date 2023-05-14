@@ -36,7 +36,7 @@ export default function Services() {
                                 <h4 className="title">Air Quality Index</h4>
                                 <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
                                     occaecati cupiditate non provident</p>
-                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>
@@ -47,7 +47,7 @@ export default function Services() {
                                 <h4 className="title">Plant Recommendation</h4>
                                 <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
                                     commodo consequat tarad limino ata</p>
-                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>
@@ -58,7 +58,7 @@ export default function Services() {
                                 <h4 className="title">Plant Store</h4>
                                 <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
                                     fugiat nulla pariatur</p>
-                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
+                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>

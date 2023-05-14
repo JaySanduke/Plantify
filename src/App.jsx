@@ -1,3 +1,7 @@
+
+// Components
+import Hero from './components/heros/hero.jsx'
+
 import './App.css';
 
 //Icons
@@ -6,8 +10,14 @@ import { FaLuggageCart } from 'react-icons/fa';
 
 export default function App() {
 
+  function search() {
+    console.log("search")
+  }
+
   return (
     <>
+
+      <Hero searchfunction={search} />
 
       <section id="featured-services" className="featured-services">
         <div className="container">

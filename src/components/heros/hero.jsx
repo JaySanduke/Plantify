@@ -1,6 +1,32 @@
+/* eslint-disable react-hooks/rules-of-hooks */
+import { useState } from 'react'
+
 // import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
 
-export default function hero() {
+export default function hero({ searchfunction }) {
+
+    const [userAddress, setUserAddress] = useState({
+        city: "",
+        state: "",
+        country: ""
+    })
+
+    function handlechange(event) {
+        const { name, value } = event.target
+        setUserAddress(prev => {
+            return {
+                ...prev,
+                [name]: value
+            }
+        })
+    }
+
+    function search() {
+
+        console.log(userAddress)
+        // searchfunction(address)
+    }
+
     return (
         <section id="hero" className="hero d-flex align-items-center">
             <div className="container">
@@ -13,10 +39,11 @@ export default function hero() {
                             making the process of gardening even more convenient.</p>
 
                         <form action="#" name="search-form" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                            <input form="search-form" type="text" className="form-control" placeholder="City"></input>
-                            <input form="search-form" type="text" className="form-control" placeholder="State"></input>
-                            <input form="search-form" type="text" className="form-control" placeholder="Country"></input>
-                            <button form="search-form" type="button" className="btn btn-primary" onClick={() => { }}>Search</button>
+                            <input form="search-form" name='locality' type="text" className="form-control" placeholder="Locality" onChange={handlechange}></input>
+                            <input form="search-form" name='city' type="text" className="form-control" placeholder="City" onChange={handlechange}></input>
+                            <input form="search-form" name='state' type="text" className="form-control" placeholder="State" onChange={handlechange}></input>
+                            {/* <input form="search-form" name='country' type="text" className="form-control" placeholder="Country" onChange={handlechange}></input> */}
+                            <button form="search-form" type="button" className="btn btn-primary" onClick={() => { search() }}>Search</button>
                         </form>
 
                         {/* <div className="row gy-4" data-aos="fade-up" data-aos-delay="400">

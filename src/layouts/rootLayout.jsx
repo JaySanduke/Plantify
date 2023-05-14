@@ -1,17 +1,15 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from 'react'
-import { Outlet, useLocation, useNavigation } from 'react-router-dom'
+import { Outlet, useNavigation } from 'react-router-dom'
 
 //Components
 import Loader from '../components/loaders/loader'
 import Header from '../components/headers/header'
-import Hero from '../components/heros/hero'
 import Footer from '../components/footers/footer'
 import Scrolltotopbutton from '../components/scrolltotop/scrolltotopbutton'
 
 export default function rootLayout() {
 
-    const location = useLocation()
     const navigation = useNavigation()
     const [loading, setLoading] = useState(true)
 
@@ -54,7 +52,6 @@ export default function rootLayout() {
         <>
             {loading ? <Loader /> : null}
             <Header sticked={sticked} />
-            {(location.pathname === "/") ? <Hero /> : null}
             <main id="main" >
                 <Outlet onLoad={() => {
                     scrollTo(0, 0)

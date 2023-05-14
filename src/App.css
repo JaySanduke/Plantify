@@ -622,7 +622,7 @@ section {
 .about .content ul h5 {
   font-size: 18px;
   font-weight: 700;
-  color: #19335c;
+  color: var(--color-secondary);
 }
 
 .about .content ul p {
