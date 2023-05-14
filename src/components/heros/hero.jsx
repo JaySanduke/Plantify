@@ -6,6 +6,7 @@ import { useState } from 'react'
 export default function hero({ searchfunction }) {
 
     const [userAddress, setUserAddress] = useState({
+        locality: "",
         city: "",
         state: "",
         country: ""
@@ -25,6 +26,12 @@ export default function hero({ searchfunction }) {
 
         console.log(userAddress)
         // searchfunction(address)
+        setUserAddress({
+            locality: "",
+            city: "",
+            state: "",
+            country: ""
+        });
     }
 
     return (
@@ -39,9 +46,9 @@ export default function hero({ searchfunction }) {
                             making the process of gardening even more convenient.</p>
 
                         <form action="#" name="search-form" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                            <input form="search-form" name='locality' type="text" className="form-control" placeholder="Locality" onChange={handlechange}></input>
-                            <input form="search-form" name='city' type="text" className="form-control" placeholder="City" onChange={handlechange}></input>
-                            <input form="search-form" name='state' type="text" className="form-control" placeholder="State" onChange={handlechange}></input>
+                            <input form="search-form" name='locality' type="text" className="form-control" placeholder="Locality" value={userAddress.locality} onChange={handlechange}></input>
+                            <input form="search-form" name='city' type="text" className="form-control" placeholder="City" value={userAddress.city} onChange={handlechange}></input>
+                            <input form="search-form" name='state' type="text" className="form-control" placeholder="State" value={userAddress.state} onChange={handlechange}></input>
                             {/* <input form="search-form" name='country' type="text" className="form-control" placeholder="Country" onChange={handlechange}></input> */}
                             <button form="search-form" type="button" className="btn btn-primary" onClick={() => { search() }}>Search</button>
                         </form>

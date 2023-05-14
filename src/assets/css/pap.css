@@ -1,0 +1,51 @@
+.parameter-container .page-header {
+    padding: 140px 0 80px 0;
+    position: relative;
+    background-color: cadetblue;
+}
+
+.parameter-container .page-header h2 {
+    font-size: 48px;
+    font-weight: 500;
+    color: #fff;
+    font-family: var(--font-secondary);
+}
+
+.breadcrumbs .page-header p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.parameter-container .stats-item {
+    padding: 30px;
+    width: 100%;
+}
+
+.parameter-container .stats-item span {
+    font-size: 32px;
+    display: block;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.parameter-container .stats-item span:after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 20px;
+    height: 3px;
+    background: var(--color-primary);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.parameter-container .stats-item p {
+    padding: 0;
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: 15px;
+    font-weight: 600;
+}
