@@ -28,8 +28,7 @@ export default function App() {
               <div className="icon flex-shrink-0"><i className="fa-solid fa-cart-flatbed"><FaLuggageCart /></i></div>
               <div>
                 <h4 className="title">Air Quality Index</h4>
-                <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                  occaecati cupiditate non provident</p>
+                <p className="description">The Air Quality Index (AQI) is a numerical scale that measures the level of air pollution in a particular location.</p>
                 <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                   className="bi bi-arrow-right"><BsArrowRight /></i></a>
               </div>
@@ -39,8 +38,7 @@ export default function App() {
               <div className="icon flex-shrink-0"><i className="bi bi-flower3"><BsFlower3 /></i></div>
               <div>
                 <h4 className="title">Plant Recommendation</h4>
-                <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                  commodo consequat tarad limino ata</p>
+                <p className="description">Plant Recommendations are  made considering the factors such as the climate, soil type, sunlight exposure, and other environmental conditions, as well as the intended use of the plants.</p>
                 <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                   className="bi bi-arrow-right"><BsArrowRight /></i></a>
               </div>
@@ -50,8 +48,7 @@ export default function App() {
               <div className="icon flex-shrink-0"><i className="bi bi-shop"><BsShop /></i></div>
               <div>
                 <h4 className="title">Plant Store</h4>
-                <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                  fugiat nulla pariatur</p>
+                <p className="description">The goal is to provide customers with quality plants and supplies to help them create and maintain beautiful and healthy gardens and green spaces.</p>
                 <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                   className="bi bi-arrow-right"><BsArrowRight /></i></a>
               </div>
@@ -62,12 +59,11 @@ export default function App() {
         </div>
       </section>
 
-
       <section id="about" className="about pt-0">
         <div className="container" data-aos="fade-up">
 
           <div className="row gy-4">
-            <div className="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <div className="col-lg-6 position-relative align-self-center order-lg-last order-first">
               <img src="src/assets/img/garden.jpeg" className="img-fluid" alt="" />
               <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
             </div>

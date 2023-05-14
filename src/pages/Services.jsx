@@ -37,9 +37,8 @@ export default function Services() {
                             <div className="icon flex-shrink-0"><i className="fa-solid fa-cart-flatbed"><FaLuggageCart /></i></div>
                             <div>
                                 <h4 className="title">Air Quality Index</h4>
-                                <p className="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint
-                                    occaecati cupiditate non provident</p>
-                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
+                                <p className="description">The Air Quality Index (AQI) is a numerical scale that measures the level of air pollution in a particular location.</p>
+                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>
@@ -48,9 +47,8 @@ export default function Services() {
                             <div className="icon flex-shrink-0"><i className="bi bi-flower3"><BsFlower3 /></i></div>
                             <div>
                                 <h4 className="title">Plant Recommendation</h4>
-                                <p className="description">Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    commodo consequat tarad limino ata</p>
-                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
+                                <p className="description">Plant Recommendations are  made considering the factors such as the climate, soil type, sunlight exposure, and other environmental conditions, as well as the intended use of the plants.</p>
+                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>
@@ -59,9 +57,8 @@ export default function Services() {
                             <div className="icon flex-shrink-0"><i className="bi bi-shop"><BsShop /></i></div>
                             <div>
                                 <h4 className="title">Plant Store</h4>
-                                <p className="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
-                                    fugiat nulla pariatur</p>
-                                <a href="#service-details" className="readmore stretched-link"><span>Learn More</span><i
+                                <p className="description">The goal is to provide customers with quality plants and supplies to help them create and maintain beautiful and healthy gardens and green spaces.</p>
+                                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
                                     className="bi bi-arrow-right"><BsArrowRight /></i></a>
                             </div>
                         </div>
@@ -70,7 +67,7 @@ export default function Services() {
 
                 </div>
             </section>
-            
+
             <ServicesSection />
 
             {/* <section id="service" className="services pt-0">
