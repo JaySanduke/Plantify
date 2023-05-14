@@ -186,7 +186,7 @@ section {
 #preloader:before {
   content: "";
   position: absolute;
-  background: url("/public/Plantify.svg") center no-repeat #fff;
+  background: url("/Plantify.svg") center no-repeat #fff;
   width: 48px;
   height: 48px;
   top: calc(50% - 24px);
@@ -597,7 +597,7 @@ section {
   font-weight: 700;
   font-size: 32px;
   font-family: var(--font-secondary);
-  color: #008d23;
+  color: #007328;
 }
 
 .about .content ul {
@@ -1715,12 +1715,13 @@ section {
   margin-right: 10px;
   border: none !important;
   background: none !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
 .hero form .form-control:hover,
 .hero form .form-control:focus {
   outline: none;
-  box-shadow: none;
+  /* box-shadow: none; */
 }
 
 .hero form .btn-primary {

@@ -1,4 +1,4 @@
-import { Link, NavLink } from 'react-router-dom'
+import { NavLink } from 'react-router-dom'
 
 export default function header({ sticked }) {
 
@@ -36,7 +36,7 @@ export default function header({ sticked }) {
                                 <li><a href="#">Drop Down 4</a></li>
                             </ul>
                         </li> */}
-                        <li><Link to={"/contact"}>Contact</Link></li>
+                        <li><NavLink to={"contact"}>Contact</NavLink></li>
                         {/* <li><a className="get-a-quote" href="get-a-quote.html">Get a Quote</a></li> */}
                     </ul>
                 </nav>

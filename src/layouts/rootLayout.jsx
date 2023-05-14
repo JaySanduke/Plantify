@@ -3,11 +3,11 @@ import { useState } from 'react'
 import { Outlet, useLocation, useNavigation } from 'react-router-dom'
 
 //Components
-import Header from '../components/headers/header'
-import Footer from '../components/footers/footer'
 import Loader from '../components/loaders/loader'
-import Scrolltotopbutton from '../components/scrolltotop/scrolltotopbutton'
+import Header from '../components/headers/header'
 import Hero from '../components/heros/hero'
+import Footer from '../components/footers/footer'
+import Scrolltotopbutton from '../components/scrolltotop/scrolltotopbutton'
 
 export default function rootLayout() {
 

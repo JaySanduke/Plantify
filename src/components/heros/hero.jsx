@@ -1,4 +1,4 @@
-import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
+// import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
 
 export default function hero() {
     return (
@@ -12,12 +12,14 @@ export default function hero() {
                             accessories,
                             making the process of gardening even more convenient.</p>
 
-                        <form action="#" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
-                            <input type="text" className="form-control" placeholder="ZIP code or City or location pin"></input>
-                            <button type="submit" className="btn btn-primary">Search</button>
+                        <form action="#" name="search-form" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
+                            <input form="search-form" type="text" className="form-control" placeholder="City"></input>
+                            <input form="search-form" type="text" className="form-control" placeholder="State"></input>
+                            <input form="search-form" type="text" className="form-control" placeholder="Country"></input>
+                            <button form="search-form" type="button" className="btn btn-primary" onClick={() => { }}>Search</button>
                         </form>
 
-                        <div className="row gy-4" data-aos="fade-up" data-aos-delay="400">
+                        {/* <div className="row gy-4" data-aos="fade-up" data-aos-delay="400">
 
                             <div className="col-lg-3 col-6">
                                 <div className="stats-item text-center w-100 h-100">
@@ -51,7 +53,7 @@ export default function hero() {
                                 </div>
                             </div>
 
-                        </div>
+                        </div> */}
                     </div>
 
                     <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
