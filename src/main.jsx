@@ -23,6 +23,8 @@ import './index.css'
 import './assets/css/font.css'
 import './assets/scss/styles.scss'
 
+import 'leaflet/dist/leaflet.css'
+
 
 // Import all of Bootstrap's JS
 // eslint-disable-next-line no-unused-vars

@@ -195,7 +195,7 @@ export default function App() {
             <div className="col-lg-8 text-center">
               <h3>Find your perfect Plant match</h3>
               <p></p>
-              <a className="cta-btn" href="#Hero">Find Now</a>
+              <a className="cta-btn" href="#hero">Find Now</a>
             </div>
           </div>
 

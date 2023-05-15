@@ -1882,3 +1882,23 @@ section {
 .footer .credits a {
   color: #fff;
 }
+
+
+/*--------------------------------------------------------------
+# Picklocation
+--------------------------------------------------------------*/
+.pick-location {
+}
+
+.pick-location .row .map-container {
+  width: auto ;
+  height: 60vh ;
+}
+
+.pick-location .row .latlng span {
+  margin-right: 5px;
+}
+
+.pick-location .row .latlng span:last-child {
+  margin-right: 0;
+}

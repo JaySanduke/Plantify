@@ -6,7 +6,6 @@ export default function services() {
                 <div className="section-header">
                     <span>Our Services</span>
                     <h2>Our Services</h2>
-
                 </div>
 
                 <div className="row gy-4">
@@ -37,7 +36,7 @@ export default function services() {
                                 <img src="src/assets/img/img6.jpg" alt="" className="img-fluid" />
                             </div>
                             <h3><a href="#" className="stretched-link">Plant Store</a></h3>
-                            <p></p>
+                            <p>We are an establishment that specializes in the sale of plants and related gardening supplies. We offer a wide variety of plants, including indoor and outdoor plants, ornamental plants, succulents, trees, shrubs, and seasonal plants.</p>
                         </div>
                     </div>
 
@@ -47,7 +46,8 @@ export default function services() {
                                 <img src="src/assets/img/img7.jpg" alt="" className="img-fluid" />
                             </div>
                             <h3><a href="#" className="stretched-link">Gardening Tips</a></h3>
-                            <p></p>
+                            <p>Our gardening tips cover a wide range of topics, including soil preparation, plant selection, planting techniques, watering and fertilizing, pest control, pruning, and harvesting.
+                                Our gardening tips are provided by experts such as horticulturists, master gardeners, or experienced gardeners, or are available through online resources, gardening books, or gardening clubs.</p>
                         </div>
                     </div>
 
@@ -57,7 +57,8 @@ export default function services() {
                                 <img src="src/assets/img/img8.jpg" alt="" className="img-fluid" />
                             </div>
                             <h3><a href="#" className="stretched-link">Community</a></h3>
-                            <p></p>
+                            <p>Our community share a common interest, identity, or geographic location and people can interact with one another and work together toward common goals.
+                                We believe in working together and supporting one another, communities can create positive social change and improve the quality of life for all members.</p>
                         </div>
                     </div>
 
@@ -67,7 +68,7 @@ export default function services() {
                                 <img src="src/assets/img/img9.jpg" alt="" className="img-fluid" />
                             </div>
                             <h3><a href="#" className="stretched-link">Enviorment Analysis</a></h3>
-                            <p></p>
+                            <p>Environmental analysis may be used to identify potential environmental risks and opportunities, inform decision-making, and develop strategies for sustainable environmental management. It can also be used to assess compliance with environmental regulations and standards, as well as to monitor changes in environmental conditions over time.</p>
                         </div>
                     </div>
 

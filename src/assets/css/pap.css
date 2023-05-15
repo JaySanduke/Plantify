@@ -1,7 +1,15 @@
 .parameter-container .page-header {
     padding: 140px 0 80px 0;
     position: relative;
-    background-color: cadetblue;
+    background-image: url("../img/banner-flowing-waves-bright-blue-background-copy-space_106885-3572.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.parameter-container .page-header::after {
+    content: "";
+    opacity: 1;
 }
 
 .parameter-container .page-header h2 {

@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unknown-property */
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState } from 'react'
 import { Outlet, useNavigation } from 'react-router-dom'
@@ -52,10 +53,10 @@ export default function rootLayout() {
         <>
             {loading ? <Loader /> : null}
             <Header sticked={sticked} />
-            <main id="main" >
-                <Outlet onLoad={() => {
-                    scrollTo(0, 0)
-                }} />
+            <main id="main" onLoad={() => {
+                scrollTo(0, 0)
+            }} >
+                <Outlet />
             </main>
             <Footer />
             <Scrolltotopbutton active={active} />
