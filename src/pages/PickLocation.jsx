@@ -1,5 +1,8 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom";
 import Map from "../components/maps/map.jsx"
+
+import axios from "axios";
 
 const center = {
     lat: 23,
@@ -10,10 +13,27 @@ export default function PickLocation() {
     const [lat, setLat] = useState(center.lat);
     const [lng, setLng] = useState(center.lng);
 
+    const navigate = useNavigate();
+
     function userlocation(location) {
         console.log(location)
         setLat(location.lat)
         setLng(location.lng)
+    }
+
+    function handleSelectLocation() {
+        navigate(`/pollutionandplants/${lat}/${lng}`)
+        // const requestdata = await axios.get('https://plantify-backend.onrender.com/api/getplantsandpollutiondata', {
+        //     params: {
+        //         lat,
+        //         lon: lng
+        //     }
+        // }).then((res) => {
+        //     console.log(res)
+        //     return res
+        // }).catch((error)=>{
+        //     console.error(error)
+        // })
     }
 
     return (
@@ -34,7 +54,7 @@ export default function PickLocation() {
 
                         <div className="d-flex justify-content-center mt-4 p-4">
                             <button className="btn btn-primary w-75" onClick={() => {
-                                alert('location')
+                                handleSelectLocation()
                             }}>
                                 Select location
                             </button>

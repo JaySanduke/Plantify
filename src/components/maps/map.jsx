@@ -23,7 +23,7 @@ export default function map({ center, userlocation }) {
     )
 
     return (
-        <MapContainer className="map-container" center={[23, 77]} zoom={10} scrollWheelZoom={false} >
+        <MapContainer className="map-container" center={[23, 77]} zoom={10} scrollWheelZoom={true} >
             <TileLayer
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
