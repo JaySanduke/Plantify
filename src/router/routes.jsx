@@ -9,6 +9,7 @@ import About from '../pages/About'
 import Contact from '../pages/Contact'
 import Services from '../pages/Services'
 import PollutantsAndPlants from '../pages/PollutantsAndPlants'
+import PR from '../pages/PR'
 
 export default function routes() {
 
@@ -20,6 +21,7 @@ export default function routes() {
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
         <Route path="pollutionandplants" element={<PollutantsAndPlants />} />
+        <Route path="PR" element={<PR />} />
       </Route>
     </>
   )
