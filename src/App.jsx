@@ -216,7 +216,7 @@ export default function App() {
           <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
 
             <div className="col-md-5">
-              <img src="/src/assets/img/personalised.jpg" className="img-fluid" alt="" />
+              <img src="images/features/personalised.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-md-7">
               <h3>Personalized plant recommendations</h3>
@@ -233,7 +233,7 @@ export default function App() {
 
           <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div className="col-md-5 order-1 order-md-2">
-              <img src="/src/assets/img/mobile.jpg" className="img-fluid" alt="" />
+              <img src="images/features/mobile.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-md-7 order-2 order-md-1">
               <h3>Convenient plant shopping</h3>
@@ -251,7 +251,7 @@ export default function App() {
 
           <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div className="col-md-5">
-              <img src="/src/assets/img/gardening.jpg" className="img-fluid" alt="" />
+              <img src="images/features/gardening.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-md-7">
               <h3>Expert gardening advice</h3>
@@ -267,7 +267,7 @@ export default function App() {
 
           <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
             <div className="col-md-5 order-1 order-md-2">
-              <img src="/src/assets/img/time.jpg" className="img-fluid" alt="" />
+              <img src="images/features/time.jpg" className="img-fluid" alt="" />
             </div>
             <div className="col-md-7 order-2 order-md-1">
               <h3>Saves time and money</h3>
