@@ -25,10 +25,9 @@ import './assets/scss/styles.scss'
 
 import 'leaflet/dist/leaflet.css'
 
-
 // Import all of Bootstrap's JS
 // eslint-disable-next-line no-unused-vars
-import * as bootstrap from 'bootstrap'
+import 'bootstrap'
 
 
 import AOS from 'aos';

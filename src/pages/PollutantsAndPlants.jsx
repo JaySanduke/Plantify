@@ -165,10 +165,10 @@ export default function PollutantsAndPlants() {
                                                         return (
                                                             <SwiperSlide key={pindex}>
                                                                 <div className='plant'>
-                                                                    <div className='plant-image'>
-                                                                        <img src={"/images/plants/"+plantname+".jpg"} alt={plant.name} />
+                                                                    <div className='plantimage'>
+                                                                        <img className='img-fluid' src={"/images/plants/"+plantname+".jpg"} alt={plant.name} />
                                                                     </div>
-                                                                    <div className='plant-name'>
+                                                                    <div className='plantname m-0 p-2'>
                                                                         <h4>{plant.name}</h4>
                                                                     </div>
                                                                 </div>
@@ -181,8 +181,7 @@ export default function PollutantsAndPlants() {
                                         </div>
                                     )
                                 }
-                            }) :
-                            <div>Your surrounding is good</div>}
+                            }) : null}
                     </div>
                 </div>
             </section>
