@@ -71,7 +71,7 @@ export default function App() {
 
           <div className="row gy-4">
             <div className="col-lg-6 position-relative align-self-center order-lg-last order-first">
-              <img src="/src/assets/img/garden.jpeg" className="img-fluid" alt="" />
+              <img src="images/garden.jpeg" className="img-fluid" alt="" />
               <a href="https://www.youtube.com/watch?v=GjLWR8N6DHo" className="glightbox play-btn"></a>
             </div>
             <div className="col-lg-6 content order-last order-lg-first">
