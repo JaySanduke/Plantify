@@ -47,13 +47,13 @@ export default function PickLocation() {
                 <div className="row">
                     <div className="col">
                         <div className="latlng d-flex p-2 pt-0">
-                            <span>Latitude: {lat},</span>
-                            <span>Longitude: {lng}</span>
+                            <span><b>Latitude: </b>{lat},</span>
+                            <span><b>Longitude: </b>{lng}</span>
                         </div>
                         <Map center={center} userlocation={userlocation} />
 
-                        <div className="d-flex justify-content-center mt-4 p-4">
-                            <button className="btn btn-primary w-75" onClick={() => {
+                        <div className="d-flex justify-content-center p-4">
+                            <button className="btn selectlocation-btn w-75" onClick={() => {
                                 handleSelectLocation()
                             }}>
                                 Select location

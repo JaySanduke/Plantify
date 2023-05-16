@@ -2,7 +2,9 @@
 import { useState, useRef, useMemo } from 'react'
 
 // Components imports
-import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker } from 'react-leaflet'
+
+import L from 'leaflet'
 
 export default function map({ center, userlocation }) {
 
@@ -29,6 +31,16 @@ export default function map({ center, userlocation }) {
                 url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
             <Marker
+                icon={
+                    L.icon({
+                        iconUrl: '/geo-alt-fill.svg',
+                        iconRetinaUrl: '/geo-alt-fill.svg',
+                        iconSize: [30, 30],
+                        iconAnchor: [15, 30],
+                        popupAnchor: [0, -30],
+                        className: 'marker-icon'
+                    })
+                }
                 draggable={draggable}
                 eventHandlers={eventHandlers}
                 position={position}

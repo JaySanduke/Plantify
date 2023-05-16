@@ -1892,11 +1892,23 @@ section {
 /*--------------------------------------------------------------
 # Picklocation
 --------------------------------------------------------------*/
-.pick-location {}
+.pick-location {
+  background-color: #7ad49a;
+}
+
+.pick-location .col {
+  background-color: #fff;
+  padding-top: 12px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
 
 .pick-location .row .map-container {
   width: auto;
   height: 60vh;
+}
+
+.pick-location .row .map-container .marker-icon {
+  cursor: pointer;
 }
 
 .pick-location .row .latlng span {
@@ -1905,6 +1917,11 @@ section {
 
 .pick-location .row .latlng span:last-child {
   margin-right: 0;
+}
+
+.pick-location .row .col .selectlocation-btn {
+  background-color: #134815;
+  color: #fff;
 }
 
 /*--------------------------------------------------------------
