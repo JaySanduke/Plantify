@@ -161,11 +161,12 @@ export default function PollutantsAndPlants() {
                                                     className="mySwiper"
                                                 >
                                                     {pollutant.plants.map((plant, pindex) => {
+                                                        const plantname = plant.name.split(' ').join('').toLowerCase();
                                                         return (
                                                             <SwiperSlide key={pindex}>
                                                                 <div className='plant'>
                                                                     <div className='plant-image'>
-                                                                        <img src={"src/assets/img/img5.jpg"} alt={plant.name} />
+                                                                        <img src={"/images/plants/"+plantname+".jpg"} alt={plant.name} />
                                                                     </div>
                                                                     <div className='plant-name'>
                                                                         <h4>{plant.name}</h4>

@@ -84,7 +84,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img5.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img5.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Air Quality Index</a></h3>
                                 <p>Cumque eos in qui numquam. Aut aspernatur perferendis sed atque quia voluptas quisquam repellendus
@@ -95,7 +95,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img4.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img4.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Plant Recommendation</a></h3>
                                 <p>Asperiores provident dolor accusamus pariatur dolore nam id audantium ut et iure incidunt molestiae
@@ -106,7 +106,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img6.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img6.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Plant Store</a></h3>
                                 <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
@@ -117,7 +117,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img7.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img7.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Gardening Tips</a></h3>
                                 <p>Dicta quam similique quia architecto eos nisi aut ratione aut ipsum reiciendis sit doloremque oluptatem
@@ -128,7 +128,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img8.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img8.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Community</a></h3>
                                 <p>Illo consequuntur quisquam delectus praesentium modi dignissimos facere vel cum onsequuntur maiores
@@ -139,7 +139,7 @@ export default function Services() {
                         <div className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
                             <div className="card">
                                 <div className="card-img">
-                                    <img src="src/assets/img/img9.jpg" alt="" className="img-fluid" />
+                                    <img src="/src/assets/img/img9.jpg" alt="" className="img-fluid" />
                                 </div>
                                 <h3><a href="service-details.html" className="stretched-link">Enviorment Analysis</a></h3>
                                 <p>Quas assumenda non occaecati molestiae. In aut earum sed natus eatae in vero. Ab modi quisquam aut
@@ -157,7 +157,7 @@ export default function Services() {
                 <div className="container">
                     <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
                         <div className="col-md-5">
-                            <img src="src/assets/img/features-1.jpg" className="img-fluid" alt="" />
+                            <img src="/src/assets/img/features-1.jpg" className="img-fluid" alt="" />
                         </div>
                         <div className="col-md-7">
                             <h3>
@@ -187,7 +187,7 @@ export default function Services() {
 
                     <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
                         <div className="col-md-5 order-1 order-md-2">
-                            <img src="src/assets/img/features-2.jpg" className="img-fluid" alt="" />
+                            <img src="/src/assets/img/features-2.jpg" className="img-fluid" alt="" />
                         </div>
                         <div className="col-md-7 order-2 order-md-1">
                             <h3>Corporis temporibus maiores provident</h3>
@@ -207,7 +207,7 @@ export default function Services() {
 
                     <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
                         <div className="col-md-5">
-                            <img src="src/assets/img/features-3.jpg" className="img-fluid" alt="" />
+                            <img src="/src/assets/img/features-3.jpg" className="img-fluid" alt="" />
                         </div>
                         <div className="col-md-7">
                             <h3>
@@ -238,7 +238,7 @@ export default function Services() {
 
                     <div className="row gy-4 align-items-center features-item" data-aos="fade-up">
                         <div className="col-md-5 order-1 order-md-2">
-                            <img src="src/assets/img/features-4.jpg" className="img-fluid" alt="" />
+                            <img src="/src/assets/img/features-4.jpg" className="img-fluid" alt="" />
                         </div>
                         <div className="col-md-7 order-2 order-md-1">
                             <h3>
@@ -268,7 +268,7 @@ export default function Services() {
                         <div className="swiper-wrapper">
                             <div className="swiper-slide">
                                 <div className="testimonial-item">
-                                    <img src="src/assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
+                                    <img src="/src/assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
                                     <h3>Saul Goodman</h3>
                                     <h4>Ceo &amp; Founder</h4>
                                     <div className="stars">
@@ -288,7 +288,7 @@ export default function Services() {
 
                             <div className="swiper-slide">
                                 <div className="testimonial-item">
-                                    <img src="src/assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
+                                    <img src="/src/assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
                                     <h3>Sara Wilsson</h3>
                                     <h4>Designer</h4>
                                     <div className="stars">
@@ -308,7 +308,7 @@ export default function Services() {
 
                             <div className="swiper-slide">
                                 <div className="testimonial-item">
-                                    <img src="src/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
+                                    <img src="/src/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
                                     <h3>Jena Karlis</h3>
                                     <h4>Store Owner</h4>
                                     <div className="stars">
@@ -327,7 +327,7 @@ export default function Services() {
 
                             <div className="swiper-slide">
                                 <div className="testimonial-item">
-                                    <img src="src/assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
+                                    <img src="/src/assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
                                     <h3>Matt Brandon</h3>
                                     <h4>Freelancer</h4>
                                     <div className="stars">
@@ -347,7 +347,7 @@ export default function Services() {
 
                             <div className="swiper-slide">
                                 <div className="testimonial-item">
-                                    <img src="src/assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
+                                    <img src="/src/assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
                                     <h3>John Larson</h3>
                                     <h4>Entrepreneur</h4>
                                     <div className="stars">

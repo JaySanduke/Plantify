@@ -78,7 +78,7 @@ section {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-image: url("./assets/img/bg1.jpg");
+  background-image: url("/src/assets/img/bg1.jpg");
 }
 
 .breadcrumbs .page-header:before {
@@ -766,7 +766,7 @@ section {
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(15, 52, 14, 0.6), rgba(14, 52, 28, 0.8)), url("./assets/img/img2.jpg") center center;
+  background: linear-gradient(rgba(15, 52, 14, 0.6), rgba(14, 52, 28, 0.8)), url("/src/assets/img/img2.jpg") center center;
   background-size: cover;
   padding: 100px 0;
 }
@@ -1031,7 +1031,7 @@ section {
 --------------------------------------------------------------*/
 .testimonials {
   padding: 80px 0;
-  background: url("./assets/img/testimonials-bg.jpg") no-repeat;
+  background: url("/src/assets/img/testimonials-bg.jpg") no-repeat;
   background-position: center center;
   background-size: cover;
   position: relative;
@@ -1672,7 +1672,7 @@ section {
   width: 100%;
   min-height: 50vh;
   background-color: #5aab61;
-  background-image: url("./assets/img/hero-bg.png");
+  background-image: url('/src/assets/img/hero-bg.png');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -1887,12 +1887,11 @@ section {
 /*--------------------------------------------------------------
 # Picklocation
 --------------------------------------------------------------*/
-.pick-location {
-}
+.pick-location {}
 
 .pick-location .row .map-container {
-  width: auto ;
-  height: 60vh ;
+  width: auto;
+  height: 60vh;
 }
 
 .pick-location .row .latlng span {
@@ -1910,7 +1909,7 @@ section {
 .parameter-container .page-header {
   padding: 140px 0 80px 0;
   position: relative;
-  background-image: url("./assets/img/banner-flowing-waves-bright-blue-background-copy-space_106885-3572.png");
+  background-image: url("/src/assets/img/banner-flowing-waves-bright-blue-background-copy-space_106885-3572.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

@@ -75,7 +75,7 @@ export default function About() {
 
             <div className="col-lg-4 col-md-6 d-flex">
               <div className="member">
-                <img src="src/assets/img/team/team-1.jpg" className="img-fluid" alt="" />
+                <img src="/src/assets/img/team/team-1.jpg" className="img-fluid" alt="" />
                 <div className="member-content">
                   <h4>Walter White</h4>
                   <span>Web Development</span>
@@ -95,7 +95,7 @@ export default function About() {
 
             <div className="col-lg-4 col-md-6 d-flex">
               <div className="member">
-                <img src="src/assets/img/team/team-2.jpg" className="img-fluid" alt="" />
+                <img src="/src/assets/img/team/team-2.jpg" className="img-fluid" alt="" />
                 <div className="member-content">
                   <h4>Sarah Jhinson</h4>
                   <span>Marketing</span>
@@ -114,7 +114,7 @@ export default function About() {
 
             <div className="col-lg-4 col-md-6 d-flex">
               <div className="member">
-                <img src="src/assets/img/team/team-3.jpg" className="img-fluid" alt="" />
+                <img src="/src/assets/img/team/team-3.jpg" className="img-fluid" alt="" />
                 <div className="member-content">
                   <h4>William Anderson</h4>
                   <span>Content</span>
@@ -145,7 +145,7 @@ export default function About() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="src/assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
+                  <img src="/src/assets/img/testimonials/testimonials-1.jpg" className="testimonial-img" alt="" />
                   <h3>Saul Goodman</h3>
                   <h4>Ceo &amp; Founder</h4>
                   <div className="stars">
@@ -161,7 +161,7 @@ export default function About() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="src/assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
+                  <img src="/src/assets/img/testimonials/testimonials-2.jpg" className="testimonial-img" alt="" />
                   <h3>Sara Wilsson</h3>
                   <h4>Designer</h4>
                   <div className="stars">
@@ -177,7 +177,7 @@ export default function About() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="src/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
+                  <img src="/src/assets/img/testimonials/testimonials-3.jpg" className="testimonial-img" alt="" />
                   <h3>Jena Karlis</h3>
                   <h4>Store Owner</h4>
                   <div className="stars">
@@ -193,7 +193,7 @@ export default function About() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="src/assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
+                  <img src="/src/assets/img/testimonials/testimonials-4.jpg" className="testimonial-img" alt="" />
                   <h3>Matt Brandon</h3>
                   <h4>Freelancer</h4>
                   <div className="stars">
@@ -209,7 +209,7 @@ export default function About() {
 
               <div className="swiper-slide">
                 <div className="testimonial-item">
-                  <img src="src/assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
+                  <img src="/src/assets/img/testimonials/testimonials-5.jpg" className="testimonial-img" alt="" />
                   <h3>John Larson</h3>
                   <h4>Entrepreneur</h4>
                   <div className="stars">
