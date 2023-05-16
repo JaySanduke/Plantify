@@ -1,9 +1,13 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { useState } from 'react'
+import { useState, useRef } from 'react'
 
 // import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
 
+import { Player } from '@lottiefiles/react-lottie-player';
+
 export default function hero({ searchfunction }) {
+
+    const lottieref = useRef(null)
 
     const [userAddress, setUserAddress] = useState({
         locality: "",
@@ -33,14 +37,14 @@ export default function hero({ searchfunction }) {
             country: ""
         });
 
-        
+
     }
 
     return (
         <section id="hero" className="hero d-flex align-items-center">
             <div className="container">
                 <div className="row gy-4 d-flex justify-content-between">
-                    <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+                    <div className="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-end">
                         <h2 data-aos="fade-up">Find your perfect plant match</h2>
                         <p data-aos="fade-up" data-aos-delay="100">Simplify the process of selecting plants and create a
                             healthy and thriving garden. Additionally, choose from a wide variety to purchase plants and gardening
@@ -93,7 +97,14 @@ export default function hero({ searchfunction }) {
                     </div>
 
                     <div className="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
-                        <img src="/src/assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt="" />
+                        {/* <img src="/src/assets/img/hero-img.svg" className="img-fluid mb-3 mb-lg-0" alt="" /> */}
+                        <Player
+                            ref={lottieref} // set the ref to your class instance
+                            autoplay={true}
+                            loop={true}
+                            src="https://assets8.lottiefiles.com/packages/lf20_xd9ypluc.json"
+                            className="hero-lottie img-fluid mb-3 mb-lg-0"
+                        />
                     </div>
 
                 </div>
