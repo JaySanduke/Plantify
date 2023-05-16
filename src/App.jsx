@@ -1,3 +1,5 @@
+import { useNavigate } from 'react-router-dom';
+
 // Components
 import Hero from './components/heros/hero.jsx'
 import Services from './components/sections/services.jsx';
@@ -10,8 +12,13 @@ import { FaLuggageCart } from 'react-icons/fa';
 
 export default function App() {
 
+  const navigate = useNavigate();
+
   function search() {
     console.log("search")
+
+    navigate('/location')
+
   }
 
   return (

@@ -25,13 +25,15 @@ export default function hero({ searchfunction }) {
     function search() {
 
         console.log(userAddress)
-        // searchfunction(address)
+        searchfunction(userAddress)
         setUserAddress({
             locality: "",
             city: "",
             state: "",
             country: ""
         });
+
+        
     }
 
     return (
