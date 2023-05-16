@@ -1983,12 +1983,12 @@ section {
 
 .parameter-container .plantsforpollutant .pollutant-name {
   border: 1px solid #e6e6e6;
-  padding: 10px;
+  padding: 20px;
 }
 
 .parameter-container .plantsforpollutant .pollutant-name h3 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 800;
   margin: 0;
   padding: 0;
 }
