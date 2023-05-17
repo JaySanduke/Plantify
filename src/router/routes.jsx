@@ -23,6 +23,7 @@ export default function routes() {
         <Route path="contact" element={<Contact />} />
         <Route path="services" element={<Services />} />
         <Route path="location" element={<PickLocation />} />
+        <Route path="location/:lat/:lng" element={<PickLocation />} />
         <Route path="pollutionandplants" element={<PollutantsAndPlants />} />
         <Route path="pollutionandplants/:lat/:lng" element={<PollutantsAndPlants />} />
         <Route path="pr" element={<PR />} />

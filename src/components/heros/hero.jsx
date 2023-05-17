@@ -1,6 +1,9 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { useState, useRef } from 'react'
 
+// Data
+import states from '/src/data/states.json';
+
 // import { BsFillArrowLeftSquareFill } from 'react-icons/bs'
 
 import { Player } from '@lottiefiles/react-lottie-player';
@@ -13,7 +16,7 @@ export default function hero({ searchfunction }) {
         locality: "",
         city: "",
         state: "",
-        country: ""
+        country: "India"
     })
 
     function handlechange(event) {
@@ -27,14 +30,13 @@ export default function hero({ searchfunction }) {
     }
 
     function search() {
-
-        console.log(userAddress)
+        // console.log(userAddress)
         searchfunction(userAddress)
         setUserAddress({
             locality: "",
             city: "",
             state: "",
-            country: ""
+            country: "India"
         });
 
 
@@ -54,7 +56,14 @@ export default function hero({ searchfunction }) {
                         <form action="#" name="search-form" className="form-search d-flex align-items-stretch mb-3" data-aos="fade-up" data-aos-delay="200">
                             <input form="search-form" name='locality' type="text" className="form-control" placeholder="Locality" value={userAddress.locality} onChange={handlechange}></input>
                             <input form="search-form" name='city' type="text" className="form-control" placeholder="City" value={userAddress.city} onChange={handlechange}></input>
-                            <input form="search-form" name='state' type="text" className="form-control" placeholder="State" value={userAddress.state} onChange={handlechange}></input>
+                            <select form="search-form" name='state' type="text" className="form-control" placeholder="State" defaultValue={""} value={userAddress.state} onChange={handlechange}>
+                                <option value="" disabled hidden>State</option>
+                                {states.map((state, index) => {
+                                    return (
+                                        <option key={index} value={state.name}>{state.name}</option>
+                                    )
+                                })}
+                            </select>
                             {/* <input form="search-form" name='country' type="text" className="form-control" placeholder="Country" onChange={handlechange}></input> */}
                             <button form="search-form" type="button" className="btn btn-primary" onClick={() => { search() }}>Search</button>
                         </form>

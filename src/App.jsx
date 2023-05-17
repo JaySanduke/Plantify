@@ -1,12 +1,15 @@
-import { useNavigate, Link, Navigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+
+import axios from 'axios';
 
 // Components
 import Hero from './components/heros/hero.jsx'
 import Services from './components/sections/services.jsx';
 
+// Styles
 import './App.css';
 
-//Icons
+// Icons
 import { BsArrowRight, BsBroadcast, BsFullscreenExit, BsDiagram3, BsFlower3, BsShop } from 'react-icons/bs';
 import { FaLuggageCart } from 'react-icons/fa';
 
@@ -14,10 +17,41 @@ export default function App() {
 
   const navigate = useNavigate();
 
-  function search() {
-    console.log("search")
+  async function search(userAddress) {
+    console.log(userAddress)
 
-    navigate('/location')
+    const locality = userAddress.locality.trim().replace(/\b\w/g, function (match) {
+      return match.toUpperCase();
+    });
+    const city = userAddress.city.trim().replace(/\b\w/g, function (match) {
+      return match.toUpperCase();
+    })
+    const state = userAddress.state;
+    const country = userAddress.country;
+
+
+    const url = "http://api.positionstack.com/v1/forward?access_key=b3dc10dcb07c78b11e261278750c357f&query=" + locality + ", " + city + "&region=" + state + "&country=IN";
+    console.log(url)
+
+    const position = await axios({
+      url: url.toString(),
+      method: 'get',
+      headers: {
+        'Content-Type': 'application/json',
+      }
+    })
+      .then(function (response) {
+        console.log(response.data);
+        return {
+          lat: response.data.data[0].latitude,
+          lng: response.data.data[0].longitude
+        }
+      })
+      .catch(function (error) {
+        console.log(error);
+      })
+
+    navigate(`/location/${position.lat}/${position.lng}`)
 
   }
 
