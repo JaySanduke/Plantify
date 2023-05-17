@@ -33,7 +33,7 @@ export default function App() {
     const url = "http://api.positionstack.com/v1/forward?access_key=b3dc10dcb07c78b11e261278750c357f&query=" + locality + ", " + city + "&region=" + state + "&country=IN";
     console.log(url)
 
-    const position = await axios({
+    await axios({
       url: url.toString(),
       method: 'get',
       headers: {
@@ -42,16 +42,14 @@ export default function App() {
     })
       .then(function (response) {
         console.log(response.data);
-        return {
-          lat: response.data.data[0].latitude,
-          lng: response.data.data[0].longitude
-        }
+        const { latitude, longitude } = response.data.data[0];
+        navigate(`/location/${latitude}/${longitude}`)
       })
       .catch(function (error) {
         console.log(error);
       })
 
-    navigate(`/location/${position.lat}/${position.lng}`)
+
 
   }
 
