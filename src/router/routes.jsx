@@ -11,7 +11,7 @@ import Services from '../pages/Services'
 import PickLocation from '../pages/PickLocation'
 import PollutantsAndPlants from '../pages/PollutantsAndPlants'
 import PR from '../pages/PR'
-import plantstore from '../pages/plantstore'
+import Plantstore from '../pages/plantstore'
 
 export default function routes() {
 
@@ -26,7 +26,7 @@ export default function routes() {
         <Route path="pollutionandplants" element={<PollutantsAndPlants />} />
         <Route path="pollutionandplants/:lat/:lng" element={<PollutantsAndPlants />} />
         <Route path="pr" element={<PR />} />
-        <Route path="plantstore" element={<plantstore />} />
+        <Route path="plantstore" element={<Plantstore />} />
       </Route>
     </>
   )

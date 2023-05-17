@@ -1,8 +1,5 @@
 import Breadcrumb from '../components/breadcrumbs/breadcrumb'
 
-// Sections
-import AboutSection from '../components/sections/about'
-
 
 export default function About() {
     return (
@@ -20,8 +17,14 @@ export default function About() {
                 </div>
             </Breadcrumb>
 
-            <AboutSection />
-            <p>We're excited to announce that our web store is currently undergoing construction to bring you an enhanced shopping experience. We apologize for any inconvenience caused during this period. Rest assured, we're working diligently to complete the updates and will be back soon to serve you better.</p>
+            <section id="plant-store" className="plant-store">
+                <div className="container" data-aos="fade-up">
+                    <div className="row gy-4 justify-content-center">
+                        <h2 className='text-center'>Coming Soon</h2>
+                        <p>We&apos;re excited to announce that our web store is currently undergoing construction to bring you an enhanced shopping experience. We apologize for any inconvenience caused during this period. Rest assured, we're working diligently to complete the updates and will be back soon to serve you better.</p>
+                    </div>
+                </div>
+            </section>
 
         </>
     )

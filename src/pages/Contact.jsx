@@ -13,7 +13,10 @@ export default function Contact() {
                         <div className="row d-flex justify-content-center">
                             <div className="col-lg-6 text-center">
                                 <h2>Contact</h2>
-                                <p>Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+                                <p>We appreciate you reaching out to us via our website. We are currently in the process of enhancing our services and making important updates. If you have any inquiries, suggestions, or simply want to get in touch, kindly provide us with your name, email address, and a message below. We will be sure to respond promptly.</p>
+                                <p>Thank you for your interest and understanding.
+                                    <br />
+                                    Best regards,</p>
                             </div>
                         </div>
                     </div>

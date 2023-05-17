@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link, Navigate } from 'react-router-dom';
 
 // Components
 import Hero from './components/heros/hero.jsx'
@@ -36,8 +36,8 @@ export default function App() {
               <div>
                 <h4 className="title">Air Quality Index</h4>
                 <p className="description">The Air Quality Index (AQI) is a numerical scale that measures the level of air pollution in a particular location.</p>
-                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
+                <Link to={'https://cpcb.nic.in/National-Air-Quality-Index/'} className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></Link >
               </div>
             </div>
 
@@ -46,8 +46,8 @@ export default function App() {
               <div>
                 <h4 className="title">Plant Recommendation</h4>
                 <p className="description">Plant Recommendations are  made considering the factors such as the climate, soil type, sunlight exposure, and other environmental conditions, as well as the intended use of the plants.</p>
-                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
+                <Link to={'/pr'} className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></Link>
               </div>
             </div>
 
@@ -56,8 +56,8 @@ export default function App() {
               <div>
                 <h4 className="title">Plant Store</h4>
                 <p className="description">The goal is to provide customers with quality plants and supplies to help them create and maintain beautiful and healthy gardens and green spaces.</p>
-                <a href="service-details.html" className="readmore stretched-link"><span>Learn More</span><i
-                  className="bi bi-arrow-right"><BsArrowRight /></i></a>
+                <Link to={'/plantstore'} className="readmore stretched-link"><span>Learn More</span><i
+                  className="bi bi-arrow-right"><BsArrowRight /></i></Link>
               </div>
             </div>
 
