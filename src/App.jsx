@@ -2,6 +2,8 @@ import { useNavigate, Link } from 'react-router-dom';
 
 import axios from 'axios';
 
+import swal from 'sweetalert';
+
 // Components
 import Hero from './components/heros/hero.jsx'
 import Services from './components/sections/services.jsx';
@@ -34,10 +36,10 @@ export default function App() {
     console.log(url)
 
     await axios({
-      url: url.toString(),
-      method: 'get',
-      headers: {
-        'Content-Type': 'application/json',
+      url: 'https://plantify-backend.herokuapp.com/api/geocode/forward',
+      method: 'POST',
+      data: {
+        "webaddress": url.toString()
       }
     })
       .then(function (response) {
@@ -47,9 +49,12 @@ export default function App() {
       })
       .catch(function (error) {
         console.log(error);
+        swal({
+          title: "Please retry",
+          text: "Somthing Went Wrong!",
+          icon: "error",
+        });
       })
-
-
 
   }
 
