@@ -36,7 +36,7 @@ export default function App() {
     console.log(url)
 
     await axios({
-      url: 'https://plantify-backend.herokuapp.com/api/geocode/forward',
+      url: 'https://plantify-backend.onrender.com/api/geocode/forward',
       method: 'POST',
       data: {
         "webaddress": url.toString()
