@@ -37,14 +37,23 @@ export default function App() {
     await axios({
       url: 'https://plantify-backend.onrender.com/api/geocode/forward',
       method: 'POST',
+      headers: {
+        "Access-Control-Allow-Origin": "*", // Required for CORS support to work
+      },
       data: {
         "webaddress": url.toString()
       }
     })
       .then(function (response) {
         console.log(response.data);
-        const { latitude, longitude } = response.data.data[0];
-        navigate(`/location/${latitude}/${longitude}`)
+        if (response.data.data.data.length > 0) {
+          const latitude = response.data.data.data[0].latitude;
+          const longitude = response.data.data.data[0].longitude;
+          navigate(`/location/${latitude}/${longitude}`)
+        }
+        else {
+          navigate(`/location`)
+        }
       })
       .catch(function (error) {
         console.log(error);
