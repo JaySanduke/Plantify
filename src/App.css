@@ -1718,9 +1718,13 @@ section {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px, rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
 }
 
-.hero form .form-control:hover,
-.hero form .form-control:focus {
+.hero form .form-control:hover {
   outline: none;
+  /* box-shadow: none; */
+}
+
+.hero form .form-control:focus {
+  outline: 2px solid var(--color-primary);
   /* box-shadow: none; */
 }
 

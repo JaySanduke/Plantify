@@ -29,7 +29,7 @@ export default function App() {
       return match.toUpperCase();
     })
     const state = userAddress.state;
-    const country = userAddress.country;
+    // const country = userAddress.country;
 
     const url = "http://api.positionstack.com/v1/forward?access_key=b3dc10dcb07c78b11e261278750c357f&query=" + locality + ", " + city + "&region=" + state + "&country=IN";
     console.log(url)
