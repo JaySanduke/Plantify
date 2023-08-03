@@ -1,1 +1,2 @@
-# Plantify Original repo
+# Plantify 
+This is Plantify project repository.
